@@ -1,6 +1,6 @@
 FROM node:12
 #Create app directory
-WORKDIR /tmp/test/decentralized-banking-master
+WORKDIR .
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
@@ -15,4 +15,4 @@ CMD ["tsc"]
 COPY . .
 
 EXPOSE 3000
-CMD [ "node", "start.js 3000" ]
+ENTRYPOINT [ "node", "start.js 3000" ]
