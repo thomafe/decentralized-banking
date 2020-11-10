@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "declaration": false,
+    "watch": false,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist/src",
+    "npm"
+  ]
+}
+
