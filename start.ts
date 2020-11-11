@@ -15,7 +15,7 @@ const accounts: { [account: string]: number } = {};
 /**
  *  Get current database of all accounts and balances
  */
-app.get("/", (req, res) => {
+app.get("/all", (req, res) => {
     res.send(getDatabase());
 })
 
