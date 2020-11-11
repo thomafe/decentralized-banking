@@ -7,13 +7,12 @@ WORKDIR /bankingAppDocker
 COPY package*.json /bankingAppDocker/
 
 RUN npm install
-RUN npm install express
+RUN npm install tsc -g
+RUN tsc
 # If you are building your code for production
 # RUN npm ci --only=production
 # Bundle app source
 COPY . .
-
-CMD ["tsc"]
 
 EXPOSE 3000
 CMD [ "node", "start.js" , "3000"]
