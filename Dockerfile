@@ -1,4 +1,4 @@
-FROM node:12
+xFROM node:12
 #Create app directory
 WORKDIR /bankingAppDocker
 # Install app dependencies
@@ -7,7 +7,7 @@ WORKDIR /bankingAppDocker
 COPY package*.json /bankingAppDocker/
 
 RUN npm install
-RUN npm install tsc -g
+RUN npm install typescript -g
 RUN tsc
 # If you are building your code for production
 # RUN npm ci --only=production
