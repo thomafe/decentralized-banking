@@ -4,7 +4,7 @@ WORKDIR /bankingAppDocker
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json /bankingAppDocker
+COPY package*.json /bankingAppDocker/
 
 RUN npm install
 RUN npm install express
@@ -13,7 +13,7 @@ RUN npm install express
 # Bundle app source
 COPY . .
 
-RUN tsc
+CMD ["tsc"]
 
 EXPOSE 3000
 ENTRYPOINT [ "node", "start.js 3000" ]
