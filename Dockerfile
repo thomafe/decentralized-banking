@@ -8,7 +8,7 @@ COPY package*.json /bankingAppDocker/
 
 RUN npm install
 RUN npm install typescript -g
-RUN tsc
+RUN tsc start.ts
 # If you are building your code for production
 # RUN npm ci --only=production
 # Bundle app source
