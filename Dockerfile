@@ -16,4 +16,4 @@ COPY . .
 CMD ["tsc"]
 
 EXPOSE 3000
-ENTRYPOINT [ "node", "start.ts 3000" ]
+CMD [ "node", "start.js" ]
