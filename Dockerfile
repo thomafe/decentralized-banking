@@ -1,4 +1,4 @@
-xFROM node:12
+FROM node:12
 #Create app directory
 WORKDIR /bankingAppDocker
 # Install app dependencies
