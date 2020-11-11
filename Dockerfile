@@ -7,6 +7,8 @@ WORKDIR /bankingAppDocker
 COPY package*.json /bankingAppDocker/
 
 RUN npm install
+RUN npm express
+RUN npm request
 RUN npm install typescript -g
 # If you are building your code for production
 # RUN npm ci --only=production
